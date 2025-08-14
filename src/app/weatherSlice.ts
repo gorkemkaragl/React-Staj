@@ -1,43 +1,32 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { WeatherData, WeatherState } from './types';
+import { getWeather } from './api';
 
-
-const initialState = {
+const initialState: WeatherState = {
   data: null,
-  status: 'idle', // idle | loading | succeeded | failed
+  status: 'idle',
 };
 
-const API_KEY = 'BURAYA_API_KEYİNİ_YAZ';
-
-//AsyncThunk oluşturma
-export const fetchWeather = createAsyncThunk(
-    "weather/fetchWeather",
-    async(city)=>{
-        const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
-        );
-        const data =await response.json();
-        return data;//slice a gönderir
-    }
-)
+export const fetchWeather = createAsyncThunk<WeatherData, string>(
+  'weather/fetchWeather',
+  async (city: string) => {
+    return await getWeather(city);  // API çağrısı burada
+  }
+);
 
 const weatherSlice = createSlice({
-    name:"weather",
-    initialState,
-    reducers:{},
-    extraReducers:(builder) => {
-        builder
-        .addCase(fetchWeather.pending , (state)=>{
-            state.status = "loading";
-        })
-        .addCase(fetchWeather.fulfilled, (state, action)=>{
-            state.status ="succeeded";
-            state.data =action.payload;
-        })
-        .addCase(fetchWeather.rejected, (state) => {
-        state.status = 'failed';
-        })
-    },
-
-})
+  name: 'weather',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchWeather.pending, (state) => { state.status = 'loading'; })
+      .addCase(fetchWeather.fulfilled, (state, action: PayloadAction<WeatherData>) => {
+        state.status = 'succeeded';
+        state.data = action.payload;
+      })
+      .addCase(fetchWeather.rejected, (state) => { state.status = 'failed'; });
+  },
+});
 
 export default weatherSlice.reducer;
