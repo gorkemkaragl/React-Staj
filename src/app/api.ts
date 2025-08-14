@@ -1,6 +1,6 @@
 import { WeatherData } from './types';
 
-const API_KEY = 'aaefbac0242f6de5e03da389c8c0968f';
+const API_KEY = 'api-key';
 
 export const getWeather = async (city: string): Promise<WeatherData> => {
   const response = await fetch(
