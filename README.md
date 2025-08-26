@@ -1,65 +1,36 @@
+# Meal-UI
 
-# React + Vite Başlangıç Şablonu
+Bu proje, **Zafer Ayan hocamız** ile birlikte gerçekleştirilen bir kurs kapsamında geliştirilmiştir.  
+Mobil arayüz tasarımı, web ortamında **React, Vite, Tailwind CSS ve TypeScript** kullanılarak kodlanmıştır.  
 
-Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir.
+## Özellikler
+- Modern mobil arayüz tasarımı  
+- React ile bileşen tabanlı geliştirme  
+- Header, Hero, Searchbar, Bottom Navigation gibi temel UI bileşenleri  
+- Categories ve Popular Recipes bölümleri  
+- TypeScript ile güçlü tip desteği  
+- Tailwind CSS ile hızlı ve esnek stil yönetimi  
 
-## 🚀 Hızlı Başlangıç
+## Teknolojiler
+- [React](https://react.dev/)  
+- [Vite](https://vitejs.dev/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
 
-Projeyi bilgisayarına klonlamak ve başlatmak için aşağıdaki adımları takip edebilirsin:
+## Ekran Görüntüsü
 
+![Meal-UI Screenshot](./src/assets/meal-ui.png)
+
+## Kurulum
 ```bash
-npx degit ozcanzaferayan/react proje-adi
-cd proje-adi
+# repoyu klonla
+git clone https://github.com/gorkemkaragl/meal-ui.git
+
+# dizine gir
+cd meal-ui
+
+# bağımlılıkları yükle
 npm install
+
+# projeyi çalıştır
 npm run dev
-```
-
-> Bu komut sayesinde Git geçmişi olmadan yalnızca proje dosyaları indirilir.
-
-## 📁 Klasör Yapısı
-
-```
-proje-adi/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-└── vite.config.ts
-```
-
-## 🛠 Teknolojiler
-
-- ⚛️ React
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🧹 ESLint
-- 🟦 TypeScript
-
-## 🧪 Gereksinimler
-
-- Node.js 18+
-- npm (veya yarn)
-
-## 🌐 GitHub
-
-[Proje GitHub Sayfası](https://github.com/ozcanzaferayan/react)
-
-## 📄 Lisans
-
-MIT Lisansı ile lisanslanmıştır. Özgürce kullanabilir, düzenleyebilir ve paylaşabilirsiniz.
-
----
-
-Keyifli kodlamalar! 🎉
