@@ -5,7 +5,7 @@ import Products from "./components/Products";
 import SearchBar from "./components/SearchBar";
 
 const App = () => {
-  return <div className="min-h-screen bg-background max-w-md mx-auto relative">
+  return <div className="min-h-screen  mx-auto relative">
     <Navigation></Navigation>
     <SearchBar></SearchBar>
     <Categories></Categories>

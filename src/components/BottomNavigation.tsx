@@ -1,4 +1,4 @@
-import { Bell, Home, Icon, Receipt, ShoppingCart, User } from "lucide-react";
+import { Bell, Home, Receipt, ShoppingCart, User } from "lucide-react";
 const navItems = [
   {
     id: "home",
@@ -25,7 +25,7 @@ const navItems = [
 const BottomNavigation = () => {
   return (
     <nav className="fixed bottom-0 left-0 right-0 w-full bg-white border-t border-gray-300">
-      <div className="flex justify-around items-center py-3 max-w-md mx-auto">
+      <div className="flex justify-around items-center py-3  mx-auto">
         {navItems.map((item) => (
           <button
             key={item.id}
