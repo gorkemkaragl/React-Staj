@@ -1,65 +1,54 @@
+# 🛒 React Shopping Site
 
-# React + Vite Başlangıç Şablonu
+Bu proje Zafer Ayan hocamız ile birlikte gerçekleştirilen bir kurs kapsamında geliştirilmiştir.
+**React** kullanılarak geliştirilmiş modern bir **alışveriş
+sitesi ön yüzü (frontend)** uygulamasıdır.\
+Mobil cihazlar için tasarlanmış bir görünüme sahiptir, ancak web
+tarayıcılarında da açılabilmektedir.
 
-Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir.
+## 🚀 Özellikler
 
-## 🚀 Hızlı Başlangıç
+-   📱 **Mobil odaklı tasarım** (responsive görünüme uygun)\
+-   🔎 Ürün arama çubuğu\
+-   🛍️ Ürün listeleme (kategoriye göre)\
+-   ⭐ Ürün detay kartları (isim, stok bilgisi, değerlendirme alanı)\
+-   📂 Sidebar aç/kapa özelliği\
+-   🧾 Alt menü (Menu, Filters, Wishlist, Cart, Account)
 
-Projeyi bilgisayarına klonlamak ve başlatmak için aşağıdaki adımları takip edebilirsin:
+## 🖼️ Görünüm
 
-```bash
-npx degit ozcanzaferayan/react proje-adi
-cd proje-adi
+Projenin arayüzünden bir örnek:
+
+![Shopping Site Screenshot](./src/assets/react-shopping-site.png)
+
+## 🛠️ Kullanılan Teknolojiler
+
+-   ⚛️ **React**\
+-   🎨 **Tailwind CSS** (hızlı ve modern stil yapısı için)\
+-   📘 **TypeScript** (tip güvenliği için)\
+-   🔍 **ESLint** (kod standartlarını korumak için)
+
+## 📦 Kurulum
+
+Projeyi yerelde çalıştırmak için:
+
+``` bash
+# Projeyi klonla
+git clone https://github.com/gorkemkaragl/react-shopping-site.git
+
+# Proje klasörüne gir
+cd react-shopping-site
+
+# Gerekli paketleri yükle
 npm install
-npm run dev
+
+# Projeyi çalıştır
+npm start
 ```
 
-> Bu komut sayesinde Git geçmişi olmadan yalnızca proje dosyaları indirilir.
+## 🔮 Gelecek Planları
 
-## 📁 Klasör Yapısı
-
-```
-proje-adi/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-├── README.md
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-└── vite.config.ts
-```
-
-## 🛠 Teknolojiler
-
-- ⚛️ React
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🧹 ESLint
-- 🟦 TypeScript
-
-## 🧪 Gereksinimler
-
-- Node.js 18+
-- npm (veya yarn)
-
-## 🌐 GitHub
-
-[Proje GitHub Sayfası](https://github.com/ozcanzaferayan/react)
-
-## 📄 Lisans
-
-MIT Lisansı ile lisanslanmıştır. Özgürce kullanabilir, düzenleyebilir ve paylaşabilirsiniz.
-
----
-
-Keyifli kodlamalar! 🎉
+-   Backend entegrasyonu (ürünleri API'den çekme)\
+-   Kullanıcı girişi & üyelik sistemi\
+-   Sepet ve ödeme sayfaları\
+-   Daha fazla kategori ve filtreleme özelliği
