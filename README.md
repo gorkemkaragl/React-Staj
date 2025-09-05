@@ -45,10 +45,3 @@ npm install
 # Projeyi çalıştır
 npm start
 ```
-
-## 🔮 Gelecek Planları
-
--   Backend entegrasyonu (ürünleri API'den çekme)\
--   Kullanıcı girişi & üyelik sistemi\
--   Sepet ve ödeme sayfaları\
--   Daha fazla kategori ve filtreleme özelliği
